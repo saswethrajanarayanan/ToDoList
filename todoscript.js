@@ -36,7 +36,6 @@ function addNewItemKeyPress(event) {
 	}
 }
 function addNewItem() {
-	console.log("Sai Ram");
 	if(input.value.length > 0) {
 		createListElement();
 	}
