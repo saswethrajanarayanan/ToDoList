@@ -1,7 +1,3 @@
-// console.log("Sai Ram Nath Periyava SAR");
-
-
-
 var button = document.getElementById("enterButton");
 var input = document.getElementById('userInput');
 var clearbtn = document.getElementById("clearButton");
@@ -10,8 +6,6 @@ var ul = document.querySelector("ul");
 function listSize() {
 	return document.getElementsByTagName("li").length;
 }
-
-
 
 function createListElement() {
 	var li = document.createElement('li');
@@ -25,7 +19,6 @@ function createListElement() {
 		var metaData = document.querySelector("h3");
 		metaData.style.display = "none";
 	}
-
 	function deleteSpecificItem() {
 		li.classList.toggle('done');
 		setTimeout(function deleteNow() {
@@ -36,15 +29,12 @@ function createListElement() {
 			}
 		}, 3000);
 	}
-
 }
-
 function addNewItemKeyPress(event) {
 	if(input.value.length > 0 && event.keyCode == 13) {
 		createListElement();
 	}
 }
-
 function addNewItem() {
 	console.log("Sai Ram");
 	if(input.value.length > 0) {
@@ -54,7 +44,6 @@ function addNewItem() {
 		alert("No item to enter");
 	}
 }
-
 function clearAll() {
 	var ul = document.querySelector("ul");
 	while(listSize() != 0) {
